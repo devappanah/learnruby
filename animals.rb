@@ -14,11 +14,10 @@ man2 = {name:'pete', age:32, location:'sg'}
 
 men = [man1, man2]
 
-end
 
 class Animal
   attr_accessor :name, :age, :status
-  def initialize 
+  def initialize(name, age, status) 
     @name = name
     @age = age
     @status = status
@@ -53,7 +52,7 @@ class Mammal < Animal
 
 end
 
-class Birds < Animal
+class Bird < Animal
   def initialize(name, age, status, legs, wings)
     super(name, age, status)
     @legs = 2
@@ -62,8 +61,20 @@ class Birds < Animal
 end
 
 class Zoo 
-  def initialize(animals = [whale, lion, giraffe])
+  def initialize(animals)
     @animals = animals
+  end 
+
+  def search(kind: '', legs: '')
+    results = []
+
+    @animals.each do |x|
+      if x.class.name == kind and x.legs == legs
+        results.push(x)
+      end
+    end
+
+    results
   end
 
 end
@@ -72,10 +83,12 @@ monkey = Mammal.new('Monkey', 32, 'alive', 'primates', 2)
 
 whale = Mammal.new('Whale', 450, 'alive', 'ocean', 0)
 
-lion  = Mammal.new('Lion', 88, 'sick' 'pantera', 4)
+lion  = Mammal.new('Lion', 88, 'sick', 'pantera', 4)
 
-animals = [whale, lion, giraffe]
+bird = Mammal.new('Bird', 34, 'alive', 'ocean', 2)
 
-dusit = Zoo.new(animals)
 
+dusit = Zoo.new([whale, lion, monkey, bird])
+
+puts dusit.search(kind: 'Mammal', legs: 2).inspect
 
