@@ -1,7 +1,12 @@
 colors = ['red', 'green', 'blue']
 
-color.each do |x|
+colors.each do |x|
   puts x
+end
+
+cars = ['ferrari', 'lamborgini', 'porsche']
+cars.each do |y|
+  puts y
 end
 
 class Animal
