@@ -37,3 +37,12 @@ div.name {
 div.email {
   padding: 10px;
 }*/
+
+div#hero { 
+  background: white url('../images/Doctors-group.jpg') no-repeat;
+}
+
+div#search {
+  background: white;
+  padding: 20px;
+}
