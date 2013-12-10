@@ -37,23 +37,21 @@ div.name {
 div.email {
   padding: 10px;
 }*/
-
-div#world { 
-  background: white url('../images/world-map.png') no-repeat;
 }
 
 div#search {
   background: white;
   padding-top: 0px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   border-radius: 4px;
 }
 
-div.jumbotron {
-  padding-top:18px;
-  padding-bottom: 18px;
 }
 
-div#advanced a{
+div#advanced {
   font-size: 16px;
+}
+
+p.address{
+  font-size: 11px;
 }
