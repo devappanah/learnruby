@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<title>Welcome to <%= @my_name %></title>
+<%= css :application %>
+<%= js :app %>
+</head>
+<body>
+  <%= erb :_navigation %>
+  
+  <div>
+    <%= yield %>
+  </div>  
+</body>
+</html>
+
