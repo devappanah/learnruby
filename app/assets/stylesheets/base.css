@@ -1,0 +1,29 @@
+div#hero { 
+  background: white url('/images/fast-food.jpg') no-repeat;
+}
+
+div#search {
+  background: white;
+  padding-top: 0px;
+  padding-bottom: 12px;
+  border-radius: 4px;
+}
+
+div.jumbotron {
+  padding-top:18px;
+  padding-bottom: 18px;
+}
+
+div#advanced a{
+  font-size: 16px;
+}
+
+div#options{
+  background:#A0A0A0;
+  border-radius: 4px;
+}
+
+div#options_quote{
+  background:#D8D8D8;
+}
+

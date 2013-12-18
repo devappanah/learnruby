@@ -60,6 +60,10 @@ module Site
       erb :index
 
     end
+    
+    get '/city_search' do 
+      erb :city_search
+    end
 
     get '/contact' do 
       erb :contact

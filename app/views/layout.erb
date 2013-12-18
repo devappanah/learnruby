@@ -6,11 +6,16 @@
 <%= js :app %>
 </head>
 <body>
-  <%= erb :_navigation %>
-  
-  <div>
-    <%= yield %>
-  </div>  
+  <div class='container'>
+    <%= erb :_navigation %>
+
+    <div>
+      <%= yield %>
+    </div>
+  </div> 
+   
+  <%= erb :_footer %>
+
 </body>
 </html>
 
