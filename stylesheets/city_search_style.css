@@ -37,3 +37,21 @@ div.name {
 div.email {
   padding: 10px;
 }*/
+}
+
+div#search {
+  background: white;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+}
+
+}
+
+div#advanced {
+  font-size: 16px;
+}
+
+p.address{
+  font-size: 11px;
+}

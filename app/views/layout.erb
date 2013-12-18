@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<title>Welcome to <%= @my_name %></title>
+<%= css :application %>
+<%= js :app %>
+</head>
+<body>
+  <div class='container'>
+    <%= erb :_navigation %>
+
+    <div>
+      <%= yield %>
+    </div>
+  </div> 
+   
+  <%= erb :_footer %>
+
+</body>
+</html>
+
