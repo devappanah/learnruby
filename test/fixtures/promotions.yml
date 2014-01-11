@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  description: MyText
+  promo_code: MyString
+  valid_from: 2013-12-21
+  expires_on: 2013-12-21
+  image: MyString
+  terms_conditions: MyText
+
+two:
+  name: MyText
+  description: MyText
+  promo_code: MyString
+  valid_from: 2013-12-21
+  expires_on: 2013-12-21
+  image: MyString
+  terms_conditions: MyText
